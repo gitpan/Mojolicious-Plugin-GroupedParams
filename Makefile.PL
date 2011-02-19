@@ -5,7 +5,7 @@ WriteMakefile
           'NAME' => 'Mojolicious::Plugin::GroupedParams',
           'VERSION_FROM' => 'lib/Mojolicious/Plugin/GroupedParams.pm',
           'PREREQ_PM' => {
-                           'Mojolicious' => '0.99995',
+                           'Mojolicious' => '1.0',
                            'Test::More' => 0
                          },
           'INSTALLDIRS' => 'site',

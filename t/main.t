@@ -2,9 +2,6 @@
 
 use Test::More tests => 3;
 
-use FindBin '$Bin';
-use lib "$Bin/../lib";
-
 use Mojolicious::Lite;
 use Test::Mojo;
 
