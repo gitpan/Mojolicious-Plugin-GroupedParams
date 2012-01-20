@@ -12,3 +12,4 @@ t/boilerplate.t
 
 Makefile.PL
 META.yml
+META.json

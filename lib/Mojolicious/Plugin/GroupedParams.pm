@@ -5,7 +5,7 @@ use strict;
 
 use base 'Mojolicious::Plugin';
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub register {
     my ( $self, $app ) = @_;
@@ -20,9 +20,10 @@ sub register {
                 my $params = $self->req->params->to_hash;
 
                 for my $key ( keys %$params ) {
-                   my ($group, $name) = $key =~ /^([^.]+)\.(.+)$/;
-                   $groups->{$group} ||= {};
-                   $groups->{$group}{$name} = $params->{$key};            
+                   if ( my ($group, $name) = $key =~ /^([^.]+)\.(.+)$/ ) {
+                       $groups->{$group} ||= {};
+                       $groups->{$group}{$name} = $params->{$key};
+                   }
                 }
 
             } 

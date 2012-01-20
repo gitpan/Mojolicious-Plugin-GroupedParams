@@ -9,7 +9,7 @@ my $builder = Module::Build->new(
     dist_version_from   => 'lib/Mojolicious/Plugin/GroupedParams.pm',
     build_requires => {
         'Test::More'  => 0,
-        'Mojolicious' => '1.0',
+        'Mojolicious' => 0.999950,
     },
     add_to_cleanup      => [ 'Mojolicious-Plugin-GroupedParams-*' ],
     create_makefile_pl => 'traditional',
