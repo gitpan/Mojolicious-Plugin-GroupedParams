@@ -2,14 +2,14 @@
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
-          'PL_FILES' => {},
-          'INSTALLDIRS' => 'site',
-          'NAME' => 'Mojolicious::Plugin::GroupedParams',
-          'EXE_FILES' => [],
-          'VERSION_FROM' => 'lib/Mojolicious/Plugin/GroupedParams.pm',
-          'PREREQ_PM' => {
-                           'Test::More' => 0,
-                           'Mojolicious' => '0.99995'
-                         }
-        )
+  'NAME' => 'Mojolicious::Plugin::GroupedParams',
+  'VERSION_FROM' => 'lib/Mojolicious/Plugin/GroupedParams.pm',
+  'PREREQ_PM' => {
+                   'Mojolicious' => '0.99995',
+                   'Test::More' => 0
+                 },
+  'INSTALLDIRS' => 'site',
+  'EXE_FILES' => [],
+  'PL_FILES' => {}
+)
 ;
